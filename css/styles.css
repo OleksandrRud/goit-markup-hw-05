@@ -89,25 +89,15 @@ img {
 .site-nav {
   display: flex;
 }
-
-.contacts-nav .item {
-}
-
-.contacts-nav .contact-item + .contact-item {
-  margin-left: 50px;
-}
-
-.site-nav .item {
-}
-
 .site-nav .item + .item {
   margin-left: 50px;
 }
 
-.site-nav :hover,
-.site-nav :focus {
+.item :hover,
+.item :focus {
   color: var(--acccent-text-color);
 }
+
 .site-nav .color-nav.current {
   color: var(--acccent-text-color);
 }
@@ -128,11 +118,11 @@ img {
   left: 0;
   bottom: 0;
   opacity: 0;
-  border-radius: 2px;
+  border-radius:2px ;
 }
 
 .color-nav {
-  color: var(--primery-text-color);
+  color: var(--title-text-color);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -148,8 +138,12 @@ img {
   margin-left: auto;
 }
 
-.contacts-nav :hover,
-.contacts-nav :focus {
+.contacts-nav .contact-item +.contact-item {
+  margin-left: 50px;
+}
+
+.contact-item :hover,
+.contact-item :focus {
   color: var(--acccent-text-color);
   fill: var(--acccent-text-color);
 }
@@ -602,7 +596,7 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-foto.list {
+.portfolio-foto {
   display: flex;
   flex-wrap: wrap;
 }
@@ -617,18 +611,23 @@ img {
 .element {
   margin-right: 30px;
   margin-bottom: 30px;
+  
 }
 
-.element:hover .portfolio-inbox,
-.element:focus .portfolio-inbox {
+.element:hover .portfolio-inbox{
   transform: translateY(0);
 }
  
 
-.element:hover,
+.element:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);  
+}
+
 .element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 
 .element:nth-child(3n) {
