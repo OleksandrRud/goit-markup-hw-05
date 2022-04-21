@@ -639,7 +639,9 @@ img {
 }
 .decor {
   text-decoration: none;
+  display: block;
 }
+
 .portfolio-box{
   position: relative;
   overflow: hidden;
